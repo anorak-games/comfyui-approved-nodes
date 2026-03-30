@@ -1,0 +1,26 @@
+# Docker builds
+docker-build/
+*.tar
+*.image
+
+# Bash
+*.sh.bak
+*.sh.orig
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+*.bak
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Environment
+.env
+.env.local
