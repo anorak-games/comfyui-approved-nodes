@@ -1,0 +1,110 @@
+# manifest.yaml
+nodes:
+  # Node available on both backend and frontend
+  - name: rgthree-comfy
+    type: registry
+    envs: [backend, frontend]
+  
+  - name: comfyui-kjnodes
+    type: registry
+    envs: [backend, frontend]
+
+  - name: comfyui-videohelpersuite
+    type: registry
+    envs: [backend, frontend]
+
+  - name: efficiency-nodes-comfyui
+    type: registry
+    envs: [backend, frontend]
+
+  - name: comfyui-depthcrafter-nodes
+    type: registry
+    envs: [backend, frontend]
+
+  - name: comfyui-impact-pack
+    type: registry
+    envs: [backend, frontend]
+
+  - name: ComfyUI-WanAnimatePreprocess
+    type: registry
+    envs: [backend, frontend]
+
+  - name: comfy-mtb
+    type: registry
+    envs: [backend, frontend]
+
+  - name: ComfyUI-GGUF
+    type: registry
+    envs: [backend, frontend]
+
+  - name: comfyui_essentials
+    type: registry
+    envs: [backend, frontend]
+
+  - name: comfyui_controlnet_aux
+    type: registry
+    envs: [backend, frontend]
+
+  - name: ComfyUI-DepthAnythingV3
+    type: registry
+    envs: [backend, frontend]
+
+  - name: ComfyUI-QwenVL
+    type: registry
+    envs: [backend, frontend]
+
+  - name: RES4LYF
+    source: https://github.com/ClownsharkBatwing/RES4LYF.git
+    type: git
+    envs: [backend, frontend]
+    install_requirements: true
+
+  - name: ComfyUI-LTXVideo
+    source: https://github.com/Lightricks/ComfyUI-LTXVideo.git
+    type: git
+    envs: [backend, frontend]
+    install_requirements: true
+
+  - name: ComfyUI-Video-Depth-Anything
+    source: https://github.com/yuvraj108c/ComfyUI-Video-Depth-Anything.git
+    type: git
+    envs: [backend, frontend]
+    install_requirements: true
+
+  - name: ComfyMath
+    source: https://github.com/evanspearman/ComfyMath
+    type: git
+    envs: [backend, frontend]
+    install_requirements: true
+
+  - name: LanPaint
+    source: https://github.com/scraed/LanPaint.git
+    type: git
+    envs: [backend, frontend]
+
+  - name: ComfyUI_bnb_nf4_fp4_Loaders
+    source: https://github.com/silveroxides/ComfyUI_bnb_nf4_fp4_Loaders.git
+    type: git
+    envs: [backend, frontend]
+    install_requirements: true
+
+  - name: ComfyUI-DVD-Depth
+    source: https://github.com/spiritform/comfy-dvd.git
+    type: git
+    envs: [backend, frontend]
+    install_requirements: false
+    recursive_install: true
+    custom_install: ' install omegaconf peft accelerate safetensors einops sentencepiece matplotlib modelscope pandas "imageio[ffmpeg]"'
+    
+  - name: ComfyUI-Inpaint-CropAndStitch
+    source: https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch.git
+    type: git
+    envs: [backend, frontend]
+    install_requirements: true
+  
+# Node available on frontend only
+  - name: ComfyUI-RunPod-Sender
+    source: git@github.com:anorak-games/ComfyUI-RunPod-Sender.git
+    type: git
+    envs: [frontend]
+ 
