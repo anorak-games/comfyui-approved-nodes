@@ -101,10 +101,3 @@ nodes:
     type: git
     envs: [backend, frontend]
     install_requirements: true
-  
-# Node available on frontend only
-  - name: ComfyUI-RunPod-Sender
-    source: git@github.com:anorak-games/ComfyUI-RunPod-Sender.git
-    type: git
-    envs: [frontend]
- 
