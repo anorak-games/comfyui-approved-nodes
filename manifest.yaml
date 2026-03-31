@@ -94,7 +94,7 @@ nodes:
     envs: [backend, frontend]
     install_requirements: false
     recursive_install: true
-    custom_install: 'pip install omegaconf peft accelerate safetensors einops sentencepiece matplotlib modelscope pandas "imageio[ffmpeg]"'
+    custom_install: 'pip install omegaconf peft accelerate safetensors einops sentencepiece matplotlib modelscope pandas imageio[ffmpeg]'
     
   - name: ComfyUI-Inpaint-CropAndStitch
     source: https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch.git
